@@ -1,0 +1,55 @@
+@import url("reset.css");
+
+* {
+   color: black;
+}
+[class*="__subtitle"] {
+	color: green;
+}
+.header > span{
+   color: pink;
+}
+.hero__info * {
+color: red;
+}
+.header__items li{
+   color: red;
+}
+.hero__title {
+   color: purple;
+}
+.hero__image {
+}
+p span {
+   color: blue;
+}
+.history__subtitle ~ p {
+   color: orange;
+}
+.popular p {
+   color: thistle;
+}
+.interesting__text {
+   color: magenta;
+}
+.interesting__text.orange {
+   color: orange;
+}
+.history__text,
+.lime{
+   color: lime;
+}
+
+.music > p {
+   color: red;
+}
+.music__text + p {
+   color: royalblue;
+}
+
+#button {
+   color: fuchsia;
+}
+.button__top {
+   color: blueviolet;
+}

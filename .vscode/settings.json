@@ -1,5 +1,9 @@
 {
    "cSpell.words": [
       "Екосистема"
-   ]
+   ],
+   "editor.formatOnPaste": false,
+   "editor.formatOnSave": true,
+   "editor.wordWrap": "on",
+   "files.autoSave": "afterDelay"
 }

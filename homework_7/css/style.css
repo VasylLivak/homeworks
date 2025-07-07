@@ -1,0 +1,273 @@
+/* Підключення фрифтів */
+
+/* Google Fonts (Plugin) */
+/* @import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap"); */
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+  background-color: #fff;
+  color: #fff;
+}
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+[class*="__container"] {
+  max-width: 1236px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page {
+  padding: 30px;
+}
+
+.header, .footer {
+  text-align: center;
+  font-style: 46px;
+  font-weight: 700;
+  color: #fdfffd;
+  text-shadow: 5px 5px 5px #000;
+  border: 5px solid #1a7c06;
+  padding: 30px 0;
+
+  background-color: #412672;
+}
+.header {
+  margin-top: 30px;
+}
+/* ============================================= */
+
+.team {
+  background-color: #412672;
+  padding-top: 61px;
+  padding-bottom: 102px;
+}
+.team__title {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 31px;
+}
+.team__subtitle {
+  font-weight: 400;
+}
+.team__cards {
+  font-size: 0;
+}
+.team__card {
+  background-color: #fff;
+  vertical-align: top;
+  padding: 20px;
+  display: inline-block;
+  max-width: 387px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  min-height: 476px;
+  transition: all 0.5s;
+}
+.team__card > * {
+  margin-bottom: 16px;
+}
+.team__card:last-of-type {
+  margin-right: 0;
+}
+.team__card:hover {
+  background-color: #ffbe48;
+}
+.team__card-image {
+  /* width: 100%; */
+}
+.team__card-title {
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+}
+.team__card-text {
+  min-height: 76px;
+
+  color: #4f4f4f;
+  font-size: 15px;
+  line-height: 1.2;
+}
+.team__card-link {
+  color: #fe3f3f;
+  font-size: 15px;
+  /* transition: all 0.5s;	 */
+  transition: all 0.8s ease 0s;
+}
+.team__card-link:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+.team__card div p:not(:last-child) {
+  margin-bottom: 15px;
+}
+.team__card > *:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================== */
+.recomend {
+  color: #412672;
+  padding-top: 55px;
+  padding-bottom: 72px;
+}
+.recomend__content {
+  margin-right: 90px;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 518px;
+}
+.recomend__content > * {
+  margin-bottom: 20px;
+}
+.recomend__content-title {
+  font-size: 34px;
+}
+.recomend__content-title span {
+  font-weight: 700;
+}
+.recomend__content-text {
+}
+.recomend__content-items {
+  color: #4f4f4f;
+  font-size: 20px;
+  line-height: 2.5; /* 255% */
+}
+.recomend__content-item {
+}
+.recomend__content-item::before {
+  content: "";
+  width: 29px;
+  height: 29px;
+  background: url("../img/team/red-icon.svg") 0 0 no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 15px;
+  transition: all 0.8s ease 0s;
+}
+.recomend__content-item:hover::before {
+  transform: scale(1.5);
+}
+
+.recomend__content > *:last-child {
+  margin-bottom: 0;
+}
+.recomend__image {
+  display: inline-block;
+  max-width: 580px;
+}
+
+/* ============================ */
+.game {
+  border: 12px double #1a7c06;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 200px;
+}
+.game h2 {
+  font-size: 30px;
+  color: rgb(22, 236, 37);
+  text-shadow: 3px 3px 3px black;
+  margin-bottom: 40px;
+}
+[class*="step-"]:not(.step-0) {
+  visibility: hidden;
+  position: relative;
+  background-color: #15ec4b;
+  border: 3px double #222120;
+}
+[class*="step-"]:nth-child(n + 8) {
+  background-color: rgb(229, 74, 22);
+}
+[class*="step-"]:nth-child(2n + 1) {
+  background-color: rgb(236, 26, 156);
+}
+[class*="step-"]:nth-child(3n + 1) {
+  background-color: rgb(59, 26, 193);
+}
+.step-0,
+.step-12 {
+  width: 250px;
+  font-size: 25px;
+  background-color: #176be1;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+.step-1 {
+  width: 40px;
+  height: 80px;
+  margin-left: 100px;
+}
+.step-2 {
+  width: 400px;
+  height: 45px;
+  margin-left: 100px;
+}
+.step-3 {
+  width: 30px;
+  height: 130px;
+  margin-left: 470px;
+}
+.step-4 {
+  width: 130px;
+  height: 35px;
+  margin-left: 370px;
+}
+.step-5 {
+  width: 20px;
+  height: 155px;
+  margin-left: 370px;
+}
+.step-6 {
+  width: 320px;
+  height: 25px;
+  margin-left: 370px;
+}
+.step-7 {
+  width: 20px;
+  height: 250px;
+  margin-left: 670px;
+}
+.step-8 {
+  width: 320px;
+  height: 20px;
+  margin-left: 370px;
+}
+.step-9 {
+  width: 15px;
+  height: 50px;
+  margin-left: 370px;
+}
+.step-10 {
+  width: 320px;
+  height: 20px;
+  margin-left: 370px;
+}
+
+.step-11 {
+  width: 10px;
+  height: 50px;
+  margin-left: 680px;
+}
+.step-12 {
+  margin-left: 560px;
+}
+
+.game > *:hover + *,
+.game > *:hover {
+  visibility: visible;
+}

@@ -32,7 +32,8 @@ body {
   padding: 30px;
 }
 
-.header, .footer {
+.header,
+.footer {
   text-align: center;
   font-style: 46px;
   font-weight: 700;
@@ -40,11 +41,10 @@ body {
   text-shadow: 5px 5px 5px #000;
   border: 5px solid #1a7c06;
   padding: 30px 0;
-
+  text-transform: uppercase;
   background-color: #412672;
 }
 .header {
-  margin-top: 30px;
 }
 /* ============================================= */
 

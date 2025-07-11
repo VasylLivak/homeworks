@@ -7,6 +7,7 @@
 	<meta charset="UTF-8">
 	<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<!-- Підключення окремого файлу стилів -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Заголовок сторінки в браузері -->
@@ -17,7 +18,8 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<h2>Homework 8</h2>
+				<a class="first__link first__top" href="../index.html">На головну</a>
+				<h2 class="first__title">Homework 8</h2>
 			</div>
 		</header>
 
@@ -92,7 +94,8 @@
 
 					<div class="cards  text">
 						<picture class="image cards-image">
-							<source srcset="img/header-image.avif, img/header-image-2x.avif 2x, img/header-image-3x.avif 3x">
+							<source srcset="img/header-image.avif, img/header-image-2x.avif 2x, img/header-image-3x.avif 3x"
+								type="image/avif">
 							<img src="img/header-image.avif" alt="дві людини стоять спиною і дивляться на гори">
 						</picture>
 						<span class="cards-info">контент, растрове, jpg ~ avif (1x, 2x, 3x)</span>
@@ -106,7 +109,7 @@
 					<div class="cards text">
 						<div id="blur" class="image cards-image">
 							<img srcset="img/mountain.avif 1x, img/mountain-2x.avif 2x, img/mountain-3x.avif 3x "
-								src="img/mountain.avif">
+								src="img/mountain.avif" alt="Гори">
 						</div>
 						<span class="cards-info">контент, растрове, jpg ~ avif (1x, 2x, 3x)</span>
 					</div>
@@ -140,15 +143,15 @@
 
 			<ul>
 				<li></li>
-				
+
 			</ul>
 
 		</main>
 
 		<footer class="footer">
 			<div class="footer__container">
-				<a href="#">Вверх</a>
-				<h2>© Vasyl Livak</h2>
+				<a class="first__link" href="#">Вверх</a>
+				<h2 class="first__title">© Vasyl Livak</h2>
 			</div>
 		</footer>
 	</div>

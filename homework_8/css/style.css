@@ -38,17 +38,16 @@ body {
   text-shadow: 5px 5px 5px black;
   margin: 20px 0;
 }
-.footer h2, 
-.header h2 {
+.first__title {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
-.footer a {
+.first__link {
   text-align: left;
   margin-top: 30px;
   transition: all 0.5s;
 }
-.footer a::before {
+.first__link::before {
   content: "";
   width: 30px;
   height: 30px;
@@ -56,16 +55,31 @@ body {
   background: url("../img/icons/arrow-top.svg") 0 0 no-repeat;
   background-size: contain;
   transition: all 0.5s;
-
-
+  opacity: 0;
 }
-.footer a:hover::before {
+.first__link:hover::before {
   transform: scale(1.5);
+  margin-right: 4px;
+  opacity: 1;
 }
-.footer a:hover {
+.first__link:hover {
   text-decoration: underline;
 }
-
+.first__top::before {
+  content: "";
+  background: url("../img/icons/arrow-right.svg") 0 0 no-repeat;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  background-size: contain;
+  transform: rotate(180deg);
+  opacity: 0;
+}
+.first__top:hover::before {
+  transform: rotate(180deg);
+  margin-right: 4px;
+  opacity: 1;
+}
 
 /* ============================================= */
 .page {

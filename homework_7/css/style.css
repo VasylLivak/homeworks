@@ -14,7 +14,13 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 22px;
   line-height: 1.2;
-  background-color: #fff;
+  background-color: #412672;
+  /* background: linear-gradient(
+    90deg,
+    rgba(5, 3, 51, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(24, 204, 240, 1) 100%
+  ); */
   color: #fff;
 }
 .wrapper {
@@ -27,25 +33,55 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-
-.page {
-  padding: 30px;
-}
-
 .header,
 .footer {
+  font-size: 40px;
+  text-shadow: 5px 5px 5px black;
+  margin: 20px 0;
+}
+.first__title {
   text-align: center;
-  font-style: 46px;
-  font-weight: 700;
-  color: #fdfffd;
-  text-shadow: 5px 5px 5px #000;
-  border: 5px solid #1a7c06;
-  padding: 30px 0;
-  text-transform: uppercase;
-  background-color: #412672;
+  padding-bottom: 30px;
 }
-.header {
+.first__link {
+  text-align: left;
+  margin-top: 30px;
+  transition: all 0.5s;
 }
+.first__link::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  background: url("../img/icons/arrow-top.svg") 0 0 no-repeat;
+  background-size: contain;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.first__link:hover::before {
+  transform: scale(1.5);
+  margin-right: 4px;
+  opacity: 1;
+}
+.first__link:hover {
+  text-decoration: underline;
+}
+.first__top::before {
+  content: "";
+  background: url("../img/icons/arrow-right.svg") 0 0 no-repeat;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  background-size: contain;
+  transform: rotate(180deg);
+  opacity: 0;
+}
+.first__top:hover::before {
+  transform: rotate(180deg);
+  margin-right: 4px;
+  opacity: 1;
+}
+
 /* ============================================= */
 
 .team {
@@ -56,6 +92,8 @@ body {
 .team__title {
   font-size: 38px;
   font-weight: 700;
+}
+.team__title:not(:last-child) {
   margin-bottom: 31px;
 }
 .team__subtitle {
@@ -86,6 +124,8 @@ body {
 }
 .team__card-image {
   /* width: 100%; */
+  width: 347px;
+  height: 266px;
 }
 .team__card-title {
   color: #000;
@@ -118,12 +158,14 @@ body {
 
 /* =========================== */
 .recomend {
+  background-color: #fff;
   color: #412672;
   padding-top: 55px;
   padding-bottom: 72px;
+  margin-bottom: 30px;
 }
 .recomend__content {
-  margin-right: 90px;
+  /* margin-right: 90px; */
   display: inline-block;
   vertical-align: middle;
   max-width: 518px;
@@ -142,9 +184,15 @@ body {
 .recomend__content-items {
   color: #4f4f4f;
   font-size: 20px;
-  line-height: 2.5; /* 255% */
+  /* line-height: 255%; 51/20 */
 }
 .recomend__content-item {
+  padding-left: 44px;
+  margin-bottom: 30px;
+}
+.recomend__content-item:last-child {
+  margin-bottom: 0;
+  
 }
 .recomend__content-item::before {
   content: "";
@@ -154,7 +202,10 @@ body {
   background-size: contain;
   vertical-align: middle;
   margin-right: 15px;
+  margin-left: -44px;
   transition: all 0.8s ease 0s;
+  display: block;
+  margin-bottom: -29px;
 }
 .recomend__content-item:hover::before {
   transform: scale(1.5);
@@ -165,7 +216,7 @@ body {
 }
 .recomend__image {
   display: inline-block;
-  max-width: 580px;
+  max-width: 680px;
 }
 
 /* ============================ */
@@ -174,7 +225,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 200px;
+  margin-bottom: 20px;
 }
 .game h2 {
   font-size: 30px;

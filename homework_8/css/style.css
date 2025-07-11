@@ -1,0 +1,109 @@
+/* Підключення фрифтів */
+
+/* Google Fonts (Plugin) */
+/* @import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap"); */
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+  font-family: "Tektur", sans-serif;
+  font-size: 22px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(5, 3, 51, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(24, 204, 240, 1) 100%
+  );
+  color: #fff;
+}
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+[class*="__container"] {
+  max-width: 1545px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header,
+.footer {
+  font-size: 40px;
+  text-shadow: 5px 5px 5px black;
+  margin: 20px 0;
+}
+.footer h2, 
+.header h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.footer a {
+  text-align: left;
+  margin-top: 30px;
+  transition: all 0.5s;
+}
+.footer a::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  background: url("../img/icons/arrow-top.svg") 0 0 no-repeat;
+  background-size: contain;
+  transition: all 0.5s;
+
+
+}
+.footer a:hover::before {
+  transform: scale(1.5);
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* ============================================= */
+.page {
+}
+.page__title {
+  text-align: center;
+  font-size: 46px;
+  color: rgb(227, 240, 40);
+  text-shadow: 5px 5px 5px black;
+}
+.cards {
+  margin-bottom: 20px;
+}
+.image {
+  display: inline-block;
+  margin-bottom: 20px;
+  min-width: 20px;
+}
+.cards-logo {
+  margin-bottom: 20px;
+}
+.cards-icon {
+  margin-bottom: 10px;
+}
+.cards-info {
+  margin-left: 20px;
+}
+#border {
+  border-radius: 26.9% 0;
+}
+#blur {
+  filter: blur(2.200000047683716px);
+  transition: all 0.5s ease-in;
+}
+#blur:hover {
+  filter: none;
+}
+.text {
+  text-align: center;
+  font-size: 30px;
+}

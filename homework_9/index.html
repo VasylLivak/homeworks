@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="uk">
+
+<head>
+	<!-- Кодування тексту -->
+	<meta charset="UTF-8">
+	<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<!-- Підключення окремого файлу стилів -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Заголовок сторінки в браузері -->
+	<title>Lesson 08</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__action-panel action-panel">
+					<a class="action-panel__link action-panel__link--right" href="../index.html">На головну</a>
+					<h2 class="action-panel__title">Homework 9</h2>
+				</div>
+				<h1 class="header__title">BEM Block</h1>
+			</div>
+		</header>
+
+
+		<main class="page">
+			<div class=" page__benefits benefits">
+				<div class="benefits__container">
+					<div class="benefits__cards">
+						<div class="benefits__card">
+							<img class="benefits__image" src="img/benefits/delivery.svg" alt="icon delivery">
+							<h3 class="benefits__title">Free Shipping</h3>
+							<div class="benefits__text">
+								<p>Free shipping with discount</p>
+							</div>
+						</div>
+						<div class="benefits__card">
+							<img class="benefits__image" src="img/benefits/support.svg" alt="icon delivery">
+							<h3 class="benefits__title">Great Support 24/7</h3>
+							<div class="benefits__text">
+								<p>Instant access to Contact</p>
+							</div>
+						</div>
+						<div class="benefits__card">
+							<img class="benefits__image" src="img/benefits/payment.svg" alt="icon delivery">
+							<h3 class="benefits__title">100% Sucure Payment</h3>
+							<div class="benefits__text">
+								<p>We ensure your money is save</p>
+							</div>
+						</div>
+						<div class="benefits__card">
+							<img class="benefits__image" src="img/benefits/money-bank.svg" alt="icon delivery">
+							<h3 class="benefits__title">Money-Back Guarantee</h3>
+							<div class="benefits__text">
+								<p>30 days money-back lorem20</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__products products">
+				<div class="products__container">
+
+					<div class="products__section-header section-header">
+						<h2 class="section-header__title">Featured Products</h2>
+						<a href="#" class="section-header__link">View All</a>
+					</div>
+
+					<div class="products__cards">
+
+						<div class="products__card">
+							<div class="products__image">
+								<span class="products__discount">Sale 50%</span>
+								<img src="img/products/apple.avif" alt="green apple">
+								<div class="products__more-picture">
+									<a href="#">
+										<img src="img/products/icon/like.svg" alt="icon">
+									</a>
+									<a href="#">
+										<img src="img/products/icon/glas.svg" alt="icon">
+									</a>
+								</div>
+							</div>
+							<div class="products__items">
+								<div class="products__item">
+									<a class="products__name" href="#">Green Apple</a>
+									<span class="products__price">$14.99<span>$20.99</span></span>
+									<div class="products__stars">
+										<img src="img/products/icon/stars.svg" alt="icon stars">
+									</div>
+								</div>
+								<div class="products__item">
+									<a class="products__basket" href="#">
+										<!-- <img src="img/products/icon/basket.svg" alt="basket"> -->
+										<svg class="products__svg" width="40" height="41" viewBox="0 0 40 41" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<circle class="product_circle-path product_circle-path--bg" cx="20" cy="20.5" r="20" />
+											<path class="product_circle-path product_circle-path--icon"
+												d="M16.6667 18.8333H14.1667L12.5 28H27.5L25.8333 18.8333H23.3333M16.6667 18.8333V16.3333C16.6667 14.4924 18.1591 13 20 13V13C21.8409 13 23.3333 14.4924 23.3333 16.3333V18.8333M16.6667 18.8333H23.3333M16.6667 18.8333V21.3333M23.3333 18.8333V21.3333" />
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="products__card">
+							<div class="products__image">
+								<img src="img/products/cabbage.avif" alt="green apple">
+								<div class="products__more-picture">
+									<a href="#">
+										<img src="img/products/icon/like.svg" alt="icon">
+									</a>
+									<a href="#">
+										<img src="img/products/icon/glas.svg" alt="icon">
+									</a>
+								</div>
+							</div>
+							<div class="products__items">
+								<div class="products__item">
+									<a class="products__name" href="#">Chanise Cabbage</a>
+									<span class="products__price">$14.99</span>
+									<div class="products__stars">
+										<img src="img/products/icon/stars.svg" alt="icon stars">
+									</div>
+								</div>
+								<div class="products__item">
+									<a class="products__basket" href="#">
+										<!-- <img src="img/products/icon/basket.svg" alt="basket"> -->
+										<svg class="products__svg" width="40" height="41" viewBox="0 0 40 41" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<circle class="product_circle-path product_circle-path--bg" cx="20" cy="20.5" r="20" />
+											<path class="product_circle-path product_circle-path--icon"
+												d="M16.6667 18.8333H14.1667L12.5 28H27.5L25.8333 18.8333H23.3333M16.6667 18.8333V16.3333C16.6667 14.4924 18.1591 13 20 13V13C21.8409 13 23.3333 14.4924 23.3333 16.3333V18.8333M16.6667 18.8333H23.3333M16.6667 18.8333V21.3333M23.3333 18.8333V21.3333" />
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="products__card">
+							<div class="products__image">
+								<img src="img/products/paprica.avif" alt="paprica">
+								<div class="products__more-picture">
+									<a href="#">
+										<img src="img/products/icon/like.svg" alt="icon">
+									</a>
+									<a href="#">
+										<img src="img/products/icon/glas.svg" alt="icon">
+									</a>
+								</div>
+							</div>
+
+							<div class="products__items">
+								<div class="products__item">
+									<a class="products__name" href="#">Green Capsicum</a>
+									<span class="products__price">$14.99</span>
+									<div class="products__stars">
+										<img src="img/products/icon/stars.svg" alt="icon stars">
+									</div>
+								</div>
+								<div class="products__item">
+									<a class="products__basket" href="#">
+										<!-- <img src="img/products/icon/basket.svg" alt="basket"> -->
+										<svg class="products__svg" width="40" height="41" viewBox="0 0 40 41" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<circle class="product_circle-path product_circle-path--bg" cx="20" cy="20.5" r="20" />
+											<path class="product_circle-path product_circle-path--icon"
+												d="M16.6667 18.8333H14.1667L12.5 28H27.5L25.8333 18.8333H23.3333M16.6667 18.8333V16.3333C16.6667 14.4924 18.1591 13 20 13V13C21.8409 13 23.3333 14.4924 23.3333 16.3333V18.8333M16.6667 18.8333H23.3333M16.6667 18.8333V21.3333M23.3333 18.8333V21.3333" />
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="products__card">
+							<div class="products__image">
+								<img src="img/products/ladias-finger.avif" alt="green apple">
+								<div class="products__more-picture">
+									<a href="#">
+										<img src="img/products/icon/like.svg" alt="icon">
+									</a>
+									<a href="#">
+										<img src="img/products/icon/glas.svg" alt="icon">
+									</a>
+								</div>
+							</div>
+							<div class="products__items">
+								<div class="products__item">
+									<a class="products__name" href="#">Ladies Finger</a>
+									<span class="products__price">$14.99</span>
+									<div class="products__stars">
+										<img src="img/products/icon/stars.svg" alt="icon stars">
+									</div>
+								</div>
+								<div class="products__item">
+									<a class="products__basket" href="#">
+										<!-- <img src="img/products/icon/basket.svg" alt="basket"> -->
+										<svg class="products__svg" width="40" height="41" viewBox="0 0 40 41" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<circle class="product_circle-path product_circle-path--bg" cx="20" cy="20.5" r="20" />
+											<path class="product_circle-path product_circle-path--icon"
+												d="M16.6667 18.8333H14.1667L12.5 28H27.5L25.8333 18.8333H23.3333M16.6667 18.8333V16.3333C16.6667 14.4924 18.1591 13 20 13V13C21.8409 13 23.3333 14.4924 23.3333 16.3333V18.8333M16.6667 18.8333H23.3333M16.6667 18.8333V21.3333M23.3333 18.8333V21.3333" />
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		<div class="page__categories categories">
+			<div class="categories__container">
+				<div class="categories__section-header section-header">
+					<h2 class="section-header__title">Shop by Top Categories</h2>
+					<a href="#" class="section-header__link">View All</a>
+				</div>
+		
+				<div class="categories__items">
+		
+					<div class="categories__item">
+						<div class="categories__image">
+							<img src="img/category/vegetable.svg" alt="vegetable">
+						</div>
+						<a href="#" class="categories__link">Vegetables</a>
+						<span class="categories__text">165 Products</span>
+					</div>
+		
+					<div class="categories__item">
+						<div class="categories__image">
+							<img src="img/category/fruits.svg" alt="fruits">
+						</div>
+						<a href="" class="categories__link">Fresh Fruit</a>
+						<span class="categories__text">137 Products</span>
+					</div>
+					<div class="categories__item">
+						<div class="categories__image">
+							<img src="img/category/fish.svg" alt="fish">
+						</div>
+						<a href="" class="categories__link">Fish</a>
+						<span class="categories__text">34 Products</span>
+					</div>
+					<div class="categories__item">
+						<div class="categories__image">
+							<img src="img/category/meat.svg" alt="meat">
+						</div>
+						<a href="" class="categories__link">Meat</a>
+						<span class="categories__text">165 Products</span>
+					</div>
+					<div class="categories__item">
+						<div class="categories__image">
+							<img src="img/category/water.svg" alt="Soda">
+						</div>
+						<a href="" class="categories__link">Water and Drinks</a>
+						<span class="categories__text">48 Products</span>
+					</div>
+					<div class="categories__item">
+						<div class="categories__image">
+							<img src="img/category/snack.svg" alt="Snack">
+						</div>
+						<a href="" class="categories__link">Snacks</a>
+						<span class="categories__text">165 Products</span>
+					</div>
+		
+				</div>
+		
+			</div>
+		</div>
+		
+		<div class="page__organic organic">
+			<div class="organic__container">
+				<div class="organic__content">
+					<div class="organic__images">
+						<img class="organic__image" src="img/organic/dad.avif" alt="dad">
+						<img class="organic__image" src="img/organic/human.webp" alt="human">
+					</div>
+					<div class="organic__info">
+						<h3 class="organic__title">100% Trusted<br>
+							Organic Food Store</h3>
+		
+						<div class="organic__block">
+							<h4 class="organic__subtitle">Healthy & natural food for lovers of healthy food.</h4>
+							<div class="organic__text">
+								<p>Ut quis tempus erat. Phasellus euismod bibendum magna non tristique. Pellentesque semper
+									vestibulum elit sed
+									condimentum. Nunc pretium fermentum interdum.</p>
+							</div>
+						</div>
+		
+						<div class="organic__block">
+							<h4 class="organic__subtitle">Every day fresh and quality products for you.</h4>
+							<div class="organic__text">
+								<p>Maecenas vehicula a justo quis laoreet. Sed in placerat nibh, a posuere ex. Morbi sem neque,
+									aliquam sed orci et,
+									rhoncus lobortis felis. Sed vestibulum nisl sit amet sapien.</p>
+							</div>
+						</div>
+		
+						<a class="organic__link" href="#">Shop Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__action-panel action-panel">
+					<a class="action-panel__link" href="#">Вверх</a>
+					<h2 class="action-panel__title">© Vasyl Livak</h2>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

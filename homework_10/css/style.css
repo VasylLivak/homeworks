@@ -196,10 +196,14 @@ body {
 .card-product__bask-white {
   transition: all 0.5s;
 }
-.card-product:hover .card-product__bask-white {
+.card-product__basket:hover .card-product__bask-white {
   opacity: 0;
   visibility: hidden;
 }
+/* .card-product:hover .card-product__bask-white {
+  opacity: 0;
+  visibility: hidden;
+} */
 .card-product__bask-green {
   position: absolute;
   top: 0;
@@ -208,10 +212,14 @@ body {
   visibility: hidden;
   transition: all 0.5s;
 }
-.card-product:hover .card-product__bask-green {
+.card-product__basket:hover .card-product__bask-green {
   opacity: 1;
   visibility: visible;
 }
+/* .card-product:hover .card-product__bask-green {
+  opacity: 1;
+  visibility: visible;
+} */
 
 /* ================================================================= */
 

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="uk">
+
+<head>
+	<!-- Кодування тексту -->
+	<meta charset="UTF-8">
+	<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<!-- Підключення окремого файлу стилів -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Заголовок сторінки в браузері -->
+	<title>Lesson 08</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__action-panel action-panel">
+					<a class="action-panel__link action-panel__link--right" href="../index.html">На головну</a>
+					<h2 class="action-panel__title">Homework 9</h2>
+				</div>
+				<h1 class="header__title">BEM Block</h1>
+			</div>
+		</header>
+
+
+		<main class="page">
+			<div class="shop">
+				<div class="shop__container">
+					<div class="shop__cards cards">
+						<div class="card-product">
+							<div class="card-product__image image-icon">
+								<span class="image-icon__sale">Sale 50%</span>
+								<img src="img/apple.png" alt="">
+								<a href="#" class="image-icon__like">
+									<img src="img/like.svg" alt="">
+								</a>
+								<a href="#" class="image-icon__view">
+									<img src="img/eye.svg" alt="">
+								</a>
+							</div>
+							<div class="card-product__info">
+								<a href="#" class="card-product__title">Green Apple</a>
+								<span class="card-product__price">$14.99 <span>$20.99</span></span>
+								<div class="card-product__stars">
+									<img src="img/stars.svg" alt="stars">
+								</div>
+							</div>
+							<div class="card-product__basket">
+								<a class="card-product__bask-white" href="#"><img src="img/basket-white.svg" alt="basket"></a>
+								<a class="card-product__bask-green" href="#"><img src="img/basket-hover.svg" alt=""></a>
+							</div>
+						</div>
+						<div class="card-product">
+							<div class="card-product__image image-icon">
+								<img src="img/orange.png" alt="">
+								<a href="#" class="image-icon__like">
+									<img src="img/like.svg" alt="">
+								</a>
+								<a href="#" class="image-icon__view">
+									<img src="img/eye.svg" alt="">
+								</a>
+							</div>
+							<div class="card-product__info">
+								<a href="#" class="card-product__title">Fresh Indian Malta</a>
+								<span class="card-product__price">$20.00</span>
+								<div class="card-product__stars">
+									<img src="img/stars.svg" alt="stars">
+								</div>
+							</div>
+							<div class="card-product__basket">
+								<a class="card-product__bask-white" href="#"><img src="img/basket-white.svg" alt="basket"></a>
+								<a class="card-product__bask-green" href="#"><img src="img/basket-hover.svg" alt=""></a>
+							</div>
+						</div>
+						<div class="card-product">
+							<div class="card-product__image image-icon">
+								<img src="img/cabbage.png" alt="">
+								<a href="#" class="image-icon__like">
+									<img src="img/like.svg" alt="">
+								</a>
+								<a href="#" class="image-icon__view">
+									<img src="img/eye.svg" alt="">
+								</a>
+							</div>
+							<div class="card-product__info">
+								<a href="#" class="card-product__title">Chinese cabbage</a>
+								<span class="card-product__price">$12.00</span>
+								<div class="card-product__stars">
+									<img src="img/stars.svg" alt="stars">
+								</div>
+							</div>
+							<div class="card-product__basket">
+								<a class="card-product__bask-white" href="#"><img src="img/basket-white.svg" alt="basket"></a>
+								<a class="card-product__bask-green" href="#"><img src="img/basket-hover.svg" alt=""></a>
+							</div>
+						</div>
+						<div class="card-product">
+							<div class="card-product__image image-icon">
+								<img src="img/potato.png" alt="">
+								<a href="#" class="image-icon__like">
+									<img src="img/like.svg" alt="">
+								</a>
+								<a href="#" class="image-icon__view">
+									<img src="img/eye.svg" alt="">
+								</a>
+							</div>
+							<div class="card-product__info">
+								<a href="#" class="card-product__title">Big Potatoes</a>
+								<span class="card-product__price">$20.00</span>
+								<div class="card-product__stars">
+									<img src="img/stars.svg" alt="stars">
+								</div>
+							</div>
+							<div class="card-product__basket">
+								<a class="card-product__bask-white" href="#"><img src="img/basket-white.svg" alt="basket"></a>
+								<a class="card-product__bask-green" href="#"><img src="img/basket-hover.svg" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="solution">
+				<div class="solution__container">
+					<div class="solution__cards">
+						<div class="solution__card">
+							<div class="solution__image">
+								<img class="solution__picture" src="img/solution/two-girls.jpg" alt="two-girls">
+								<img class="solution__small-rond" src="img/solution/small-ellipse.svg" alt="small-ellipse">
+								<img class="solution__big-rond" src="img/solution/big-ellipse.svg" alt="big-ellipse">
+								<img class="solution__green-point" src="img/solution/points.svg" alt="points">
+							</div>
+							<div class="solution__info card-info">
+								<h2 class="card-info__title">The Industry's Top-Rated GRC and Audit Management Technology
+								</h2>
+								<div class="card-info__text">
+									<p>Built to provide the efficiency, connectedness, and visibility you need to stay ahead
+										of
+										today’s dynamic risk
+										environment. Built to provide the efficiency, connectedness, and visibility you need to
+										stay ahead of today’s dynamic
+										risk environment.</p>
+								</div>
+								<a class="card-info__button" href="#">Read the Documentation</a>
+							</div>
+						</div>
+
+						<div class="solution__card solution__card--position">
+							<div class="solution__info solution__info--position card-info">
+								<h2 class="card-info__title">Explore the Modern Connected Risk Platform</h2>
+								<div class="card-info__text">
+									<p>Built to provide the efficiency, connectedness, and visibility you need to stay ahead
+										of
+										today’s dynamic risk
+										environment. Built to provide the efficiency, connectedness, and visibility you need to
+										stay ahead of today’s dynamic
+										risk environment.</p>
+								</div>
+								<a class="card-info__button" href="#">Read the Documentation</a>
+							</div>
+
+
+							<div class="solution__image solution__image--position">
+								<img class="solution__picture" src="img/solution/two-boys.jpg" alt="two-girls">
+								<img class="solution__small-rond solution__small-rond--right"
+									src="img/solution/small-ellipse.svg" alt="small-ellipse">
+								<img class="solution__big-rond solution__big-rond--right" src="img/solution/medium-ellipse.svg"
+									alt="big-ellipse">
+								<img class="solution__green-point solution__green-point--right"
+									src="img/solution/horizont-point.svg" alt="points">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="advantage">
+				<div class="advantage__bg"></div>
+				<div class="advantage__container">
+					<div class="advantage__block">
+						<div class="advantage__header">
+							<span class="advantage__subtitle">Our Advantages</span>
+							<h2 class="advantage__titles">Explore the Modern Connected Risk Platform</h2>
+							<div class="advantage__text">
+								<p>Built to provide the efficiency, connectedness, and visibility you need to stay ahead of
+									today’s dynamic risk
+									environment.</p>
+							</div>
+						</div>
+
+
+						<div class="advantage__items">
+							<div class="advantage__item  advantage__item--top">
+								<div class="advantage__picture">
+									<img src="./img/advantages/01.svg" alt="icon school">
+								</div>
+								<h3 class="advantage__title">Risk Management</h3>
+								<span class="advantage__line"></span>
+								<div class="advantage__paragraph">
+									<p>The gradual
+										accumulation of
+										information about </p>
+								</div>
+							</div>
+
+							<div class="advantage__item  advantage__item--bottom">
+								<div class="advantage__picture">
+									<img src="./img/advantages/02.svg" alt="icon book and brain">
+								</div>
+								<h3 class="advantage__title">Compliance Management</h3>
+								<span class="advantage__line"></span>
+								<div class="advantage__paragraph">
+									<p>The gradual
+										accumulation of
+										information about</p>
+								</div>
+							</div>
+							<div class="advantage__item  advantage__item--top advantage__item--white">
+								<div class="advantage__picture">
+									<img src="./img/advantages/03.svg" alt="icon  students hat">
+								</div>
+								<h3 class="advantage__title advantage__title--white">SOX Management</h3>
+								<span class="advantage__line advantage__line--white"></span>
+								<div class="advantage__paragraph advantage__paragraph--white">
+									<p>The gradual
+										accumulation of
+										information about</p>
+								</div>
+							</div>
+							<div class="advantage__item  advantage__item--bottom advantage__item--last">
+								<div class="advantage__picture">
+									<img src="./img/advantages/04.svg" alt="icon teacher show table for students">
+								</div>
+								<h3 class="advantage__title">Internal Audit Streamlined</h3>
+								<span class="advantage__line"></span>
+								<div class="advantage__paragraph">
+									<p>The gradual
+										accumulation of
+										information about</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__action-panel action-panel">
+					<a class="action-panel__link" href="#">Вверх</a>
+					<h2 class="action-panel__title">© Vasyl Livak</h2>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

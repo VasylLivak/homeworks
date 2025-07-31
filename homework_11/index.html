@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="uk">
+
+<head>
+	<!-- Кодування тексту -->
+	<meta charset="UTF-8">
+	<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<!-- Підключення окремого файлу стилів -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Заголовок сторінки в браузері -->
+	<title>Lesson 10</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<h1 class="header__title-hero title-hero">Homework 11 <span>Transform</span></h1>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<div class="transform">
+					<div class="items">
+						<h3 class="items__title">Translate</h3>
+						<div class="items__block block">
+							<h2 class="block__item block__item--translate">transform: <br>translate(20px, 20px);</h2>
+						</div>
+						<div class="block">
+							<h2 class="block__item  block__item--translate-x">transform: <br>translateX(30px);</h2>
+						</div>
+						<div class="block">
+							<h2 class="block__item  block__item--translate-y">transform: <br>translateY(-20px);</h2>
+						</div>
+					</div>
+					<div class="items">
+						<h3 class="items__title">scale</h3>
+						<div class="items__block block">
+							<h2 class="block__item block__item--scale">transform: <br>scale(0.8);</h2>
+						</div>
+						<div class="block">
+							<h2 class="block__item block__item--scale-x">transform: <br>scaleX(0.5);</h2>
+						</div>
+						<div class="block">
+							<h2 class="block__item block__item--scale-y">transform: <br>scaleY(0.5);</h2>
+						</div>
+
+					</div>
+					<div class="items">
+						<h3 class="items__title">rotate</h3>
+						<div class="items__block block">
+							<h2 class="block__item block__item--rotate">transform: <br>rotate(360deg);</h2>
+						</div>
+						<div class="block">
+							<h2 class="block__item block__item--rotate-x">transform: <br>rotateX(50deg);</h2>
+						</div>
+						<div class="block">
+							<h2 class="block__item block__item--rotate-y">transform: <br>rotateY(50deg);</h2>
+						</div>
+					</div>
+					<div class="items">
+						<h3 class="items__title">skew</h3>
+						<div class="items__block block">
+							<h2 class="block__item block__item--skew">transform: <br>skew(-10deg, 0deg);</h2>
+						</div>
+						<div class="block">
+							<h2 class="block__item block__item--skew-x">transform: <br>skewX(-10deg);</h2>
+						</div>
+						<div class="block">
+							<h2 class="block__item block__item--skew-y">transform: <br>skewY(50deg);</h2>
+						</div>
+					</div>
+
+					<div class="items">
+						<h3 class="items__title">matrix</h3>
+						<div class="items__block block">
+							<h2 class="block__item block__item--matrix">transform: <br> translate(20%, 20%) scale(0.5)
+								rotate(30deg) skew(20deg, 20deg);</h2>
+						</div>
+					</div>
+
+					<div class="items">
+						<h3 class="items__title">transform-origin</h3>
+						<div class="items__block block">
+							<h2 class="block__item block__item--origin">transform: <br>rotate(40deg); transform-origin: top
+								right;
+							</h2>
+						</div>
+						<div class="items__block block">
+							<h2 class="block__item block__item--origin-top">transform: <br>scale(0.8); transform-origin: 20px
+								30px;
+							</h2>
+						</div>
+					</div>
+
+					<div class="items items--center">
+						<h3 class="items__title">transform-3D</h3>
+						<div class="block block--3d">
+							<h2 class="block__item  block__item--translate-3d">transform: <br>translate3D(20px, 20px, 50px);
+							</h2>
+						</div>
+						<div class="block block--3d">
+							<h2 class="block__item block__item--scale-3d">transform: <br>scale3D(1.2, 1.2, 1.4);</h2>
+						</div>
+						<div class="block block--3d">
+							<h2 class="block__item block__item--rotate-3d">transform: <br>rotate3D(1, 1, 1, 40deg);</h2>
+						</div>
+						<div class="block block--3d">
+							<h2 class="block__item block__item--translate-scale">transform: <br>translate3d(30px, 30px, 30px)
+								scale3d(0.8, 0.8, 1.5);</h2>
+						</div>
+
+					</div>
+
+					<div class="items">
+						<h3 class="items__title">backface-visibility</h3>
+						<div class="money">
+							<div class="money__body">
+								<img class="money__back" src="./img/back.jpeg" alt="">
+								<img class="money__front" src="./img/front.jpeg" alt="">
+							</div>
+						</div>
+
+						<div class="coin">
+							<div class="coin__body">
+								<img class="coin__back" src="./img/back-coin.webp" alt="">
+								<img class="coin__front" src="./img/front-coin.webp" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="button-start">Start</button>
+				<button class="light-back">Stop</button>
+				<div class="transport">
+					<div class="transport__container">
+						<div class="transport__bg">
+
+							<div class="transport__top">
+								<div class="transport__windows">
+									<div class="transport__window transport__window--1 transport__window-line">
+										<div class="transport__chair"></div>
+										<div class="transport__chair transport__chair--left"></div>
+									</div>
+									<div class="transport__window transport__window--2 transport__window-line">
+										<div class="transport__chair"></div>
+										<div class="transport__chair transport__chair--left"></div>
+									</div>
+									<div class="transport__window transport__window--3 transport__window-line">
+										<div class="transport__chair"></div>
+										<div class="transport__chair transport__chair--left"></div>
+									</div>
+									<div class="transport__window transport__window--4 transport__window-line">
+										<div class="transport__chair"></div>
+										<div class="transport__chair transport__chair--left"></div>
+									</div>
+									<div class="transport__window transport__window--5 transport__window-line">
+										<div class="transport__chair"></div>
+										<div class="transport__chair transport__chair--left"></div>
+									</div>
+								</div>
+								<div class="transport__title">Best Of British</div>
+								<span class="transport__tablo">11</span>
+								<!-- <div class="transport__"></div> -->
+							</div>
+							<div class="transport__body">
+								<div class="transport__windows">
+									<div class="transport__window transport__window--0">
+										<img class="transport__driver" src="img/driver.png" alt="driver">
+									</div>
+									<div class="transport__window transport__window--1 transport__window-line">
+										<div class="transport__chair"></div>
+										<div class="transport__chair transport__chair--left"></div>
+									</div>
+									<div class="transport__window transport__window--2 transport__window-line">
+										<div class="transport__chair"></div>
+										<div class="transport__chair transport__chair--left"></div>
+									</div>
+									<div class="transport__window transport__window--3 transport__window-line">
+										<div class="transport__chair"></div>
+										<div class="transport__chair transport__chair--left"></div>
+									</div>
+									<div class="transport__window transport__window--4 transport__window-line">
+										<div class="transport__chair"></div>
+										<div class="transport__chair transport__chair--left"></div>
+									</div>
+									<div class="transport__window transport__window--5 transport__window-line">
+										<div class="transport__chair"></div>
+										<div class="transport__chair transport__chair--left"></div>
+									</div>
+								</div>
+								<div class="transport__wheels wheels">
+									<div class="wheels__back"></div>
+									<div class="wheel"></div>
+								</div>
+								<div class="transport__wheels transport__wheels--left wheels">
+									<div class="wheels__back"></div>
+									<div class="wheel"></div>
+								</div>
+								<div class="transport__back-line"></div>
+								<div class="transport__door door">
+									<div class="door__line"></div>
+									<div class="door__line door__line--a"></div>
+									<div class="door__line door__line--b"></div>
+									<div class="door__line door__line--c"></div>
+									<div class="door__line door__line--d"></div>
+									<div class="door__line door__line--e"></div>
+									<div class="door__line door__line--f"></div>
+									<div class="door__line door__line--g"></div>
+									<div class="door__line door__line--h"></div>
+									<div class="door__line door__line--i"></div>
+									<div class="door__line door__line--j"></div>
+									<div class="door__line door__line--k"></div>
+								</div>
+								<div class="transport__line-white"></div>
+								<div class="transport__line-white transport__line-white--bottom"></div>
+								<div class="transport__light">
+								</div>
+								<div class="transport__light-red">
+								</div>
+								<div class="transport__bamper"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<h2 class="footer__title-hero title-hero">© Vasia Livak</h2>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
